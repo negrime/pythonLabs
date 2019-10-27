@@ -14,7 +14,7 @@ fileName = input("Input file name\n")
 while not canOpen(fileName):
     fileName = input("Input file name\n")
 
-file = open(fileName, 'r+')
+file = open(fileName, 'r')
 
 text = file.read()
 text = re.sub("[' ']{2,}", ' ', text)

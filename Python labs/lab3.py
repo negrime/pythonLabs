@@ -6,8 +6,9 @@ def removeEmptyDirectories(curPath):
     dir_list = os.listdir(curPath)
     if dir_list:
         for i in dir_list:
-            if os.path.isdir(curPath + "\\" + i):
-                removeEmptyDirectories(curPath + "\\" + i)
+            dir = os.path.join(curPath, i)
+            if os.path.isdir(dir):
+                removeEmptyDirectories(dir)
         if not os.listdir(curPath):
             os.rmdir(curPath)
     else:
