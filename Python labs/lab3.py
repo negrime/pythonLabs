@@ -1,7 +1,7 @@
 import os
 import sys
 
-
+print("пшив на хуй")
 def removeEmptyDirectories(curPath):
     dir_list = os.listdir(curPath)
     if dir_list:
