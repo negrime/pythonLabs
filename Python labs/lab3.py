@@ -1,7 +1,7 @@
 import os
 import sys
 
-print("пшив на хуй")
+
 def removeEmptyDirectories(curPath):
     dir_list = os.listdir(curPath)
     if dir_list:
@@ -20,7 +20,7 @@ try:
         removeEmptyDirectories(sys.argv[1])
         print("Success!")
     else:
-        raise NameError("The directory is does not exist!")
+        raise NameError("The directory  does not exist!")
 except NameError as e:
     print(e)
 except Exception as e:
